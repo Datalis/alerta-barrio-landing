@@ -2,32 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+}
+
+@layer components{
+    .btn {
+      @apply border-2 border-black text-theme-red bg-white rounded-xl px-6 py-3 text-xl font-bold;
+    }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .clip-1 {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  }
+  .clip-2 {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  }
+
+  .clip-how-it-works-section {
+    clip-path: polygon(calc(90% - 1px) 100%, 100% 80%, 100% 100%, 90% 100%);
+  }
+  .clip-alert-section {
+    clip-path: polygon(0 100%, 90% 0%, 100% 0%, 100% 100%);
   }
 }
