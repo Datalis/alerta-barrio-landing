@@ -4,8 +4,8 @@ import SectionTitle from './SectionTitle';
 
 export default function ContactForm() {
     return (
-        <section id="contact" className="min-h-screen bg-theme-gray-light">
-            <div className="container mx-auto flex flex-col items-center">
+        <section id="contact" className="min-h-screen bg-theme-gray-light pt-20">
+            <div className="container mx-auto flex flex-col items-center max-w-5xl">
                 {/* <h3 className="text-3xl font-bold">Formulario de <span className="italic font-black text-theme-red">Contacto</span></h3> */}
                 <SectionTitle>
                 Formulario de <span className="italic font-black text-theme-red">Contacto</span>

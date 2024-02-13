@@ -11,39 +11,50 @@ import { useEffect } from "react";
 
 export default function AlertSection() {
   useEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
-    // let ctx = gsap.context(() => {
-    //   const panels = gsap.utils.toArray(".scroll") as HTMLElement[];
-    //   let tops = panels.map((panel) =>
-    //     ScrollTrigger.create({ trigger: panel, start: "top top" })
-    //   );
-    //   panels.forEach((panel, i) => {
-    //     ScrollTrigger.create({
-    //       trigger: panel,
-    //       start: () =>
-    //         panel.offsetHeight < window.innerHeight
-    //           ? "top top"
-    //           : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
-    //       pin: true,
-    //       pinSpacing: false,
-    //     });
-    //     ScrollTrigger.create({
-    //       snap: {
-    //         snapTo: (progress, self: any) => {
-    //           let panelStarts = tops.map((st) => st.start), // an Array of all the starting scroll positions. We do this on each scroll to make sure it's totally responsive. Starting positions may change when the user resizes the viewport
-    //             snapScroll = gsap.utils.snap(panelStarts, self.scroll()); // find the closest one
-    //           return gsap.utils.normalize(
-    //             0,
-    //             ScrollTrigger.maxScroll(window),
-    //             snapScroll
-    //           ); // snapping requires a progress value, so convert the scroll position into a normalized progress value between 0 and 1
-    //         },
-    //         duration: 0.5,
-    //       },
-    //     });
-    //   });
-    // });
-    // return () => ctx?.revert();
+    gsap.registerPlugin(ScrollTrigger);
+    let ctx = gsap.context(() => {
+      gsap.to("#alerts", {
+        scrollTrigger: {
+          trigger: "#alerts",
+          start: "top top",
+          end: "+=300%",
+          scrub: 1,
+          // markers: true,
+          pin: true,
+          onUpdate: (self) => {
+            if (self.progress < 1/3) {
+              gsap.to(".scroll:nth-child(1)", {
+                opacity: 1,
+              });
+            } else {
+              gsap.to(".scroll:nth-child(1)", {
+                opacity: 0,
+              });
+            }
+            if (self.progress > 1/3 && self.progress < 2/3) {
+              gsap.to(".scroll:nth-child(2)", {
+                opacity: 1,
+              });
+            } else {
+              gsap.to(".scroll:nth-child(2)", {
+                opacity: 0,
+              });
+            }
+            if (self.progress > 2/3) {
+              gsap.to(".scroll:nth-child(3)", {
+                opacity: 1,
+              });
+            } else {
+              gsap.to(".scroll:nth-child(3)", {
+                opacity: 0,
+              });
+            }
+          }
+        },
+        opacity: 1,
+      })
+    });
+    return () => ctx?.revert();
   }, []);
 
   return (
@@ -57,27 +68,35 @@ export default function AlertSection() {
         <div className="relative h-full w-full flex-1">
           <div className="scroll flex h-full w-full items-center justify-center">
             <div className="relative">
-              <Image src={Cell911Image} alt="911" width={300} />
-              <p className="absolute bottom-28 left-[100%] whitespace-nowrap text-sm">
+              <Image src={Cell911Image} alt="911" width={350} className="mt-10" />
+              <p className="absolute bottom-28 left-[100%] whitespace-nowrap text-sm font-bold">
                 Presionas el botón en el aplicativo <br /> y de inmediato las{" "}
-                <span className="font-bold">
-                  sirenas distribuidas <br /> en el barrio emiten un fuerte
-                  sonido.
-                </span>
+                sirenas distribuidas <br /> en el barrio emiten un fuerte
+                sonido.
               </p>
               {/* <Image src={DottedLine1} alt="dotted line" className="absolute -right-32 top-0 bottom-0 my-auto" width={150} /> */}
             </div>
           </div>
-          {/* <div className="scroll absolute top-0 left-0 flex items-center justify-center bg-blue-500 w-full h-full opacity-0">
-            <div className="">
-              <Image src={CellSilenceImage} alt="911" width={300} />
+          <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
+            <div className="relative">
+              <Image src={CellSilenceImage} alt="911" width={350} />
+              <p className="absolute top-28 right-[100%] whitespace-nowrap text-sm font-bold">
+                Presionas el botón en el aplicativo <br /> y se envía de inmediato
+                un mensaje de <br />
+                alarma al grupo de Whatsapp del <br />
+                barrio con tu ubicación GPS.
+              </p>
             </div>
           </div>
-          <div className="scroll absolute top-0 left-0 flex items-center justify-center bg-yellow-500 w-full h-full opacity-0">
-            <div className="">
-              <Image src={CellSoundImage} alt="911" width={300} />
+          <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
+            <div className="relative">
+              <Image src={CellSoundImage} alt="911" width={350} />
+              <p className="absolute bottom-40 align-middle left-[100%] whitespace-nowrap text-sm font-bold ">
+                Alerta Barrio integra una característica <br /> escencial para tu seguridad, un botón <br /> directo de llamada al ECU 911.
+                Con solo <br /> un toque, puedes conectarte rapidamente <br /> con los servicios de emergencia.
+              </p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

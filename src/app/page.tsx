@@ -17,6 +17,9 @@ import AlarmaX5Image from "@/lib/assets/ALARMA-X5.png";
 import GroupImage from "@/lib/assets/group.png";
 import GroupoSombraImage from "@/lib/assets/GRUPO-SOMBRA.png";
 import MujerSeguridadImage from "@/lib/assets/MUJER-SEGURIDAD.png";
+import Group2Image from "@/lib/assets/group-2.png";
+import DottedRed3Image from "@/lib/assets/dotted-red-3.png";
+import DottedRed2Image from "@/lib/assets/dotted-red-2.png";
 import DottedRed1Image from "@/lib/assets/dotted-red-1.png";
 
 export default function Home() {
@@ -24,7 +27,7 @@ export default function Home() {
     <main className="">
       <Header></Header>
       <section id="que-es" className="">
-        <div className="container mx-auto flex flex-col items-center ">
+        <div className="container mx-auto flex flex-col items-center mt-20">
           <SectionTitle>¿Qué es Alerta Barrio?</SectionTitle>
           <div className="text-theme-red mt-20 rounded-2xl bg-black px-5 py-2 text-lg">
             Alerta Barrio te ofrece el control total de tu seguridad y la de tus
@@ -42,21 +45,39 @@ export default function Home() {
         </div>
       </section>
       <section className="relative">
-        <div className="container relative z-10 mx-auto flex flex-col items-center py-20">
+        <div className="container relative z-10 mx-auto flex flex-col items-center py-20 max-w-5xl">
           <SectionTitle>¿Cómo funciona?</SectionTitle>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-3 mt-20 gap-10">
             <div>
-              <Image src={AlertImage} alt="alert" width={400} />
+              <Image src={AlertImage} alt="alert" width={350} />
             </div>
-            <div>
-
+            <div className="self-center">
+              <p className="font-light">Con Alerta Barrio, tienes
+                acceso a un aplicativo móvil
+                que te permite activar </p>
+              <div className="relative">
+                <span className="text-5xl font-black block mt-5">2 tipos</span>
+                <span className="font-bold">diferentes de alarmas</span>
+                <Image src={DottedRed2Image} alt="dotted" width={150} className="absolute -right-5 top-0 bottom-0 my-auto" />
+              </div>
+              <div className="relative">
+                <p className="mt-20">
+                  También
+                  <span className="font-bold"> puedes comunicarte 
+                    rápidamente <br /> con el ECU 911</span>.
+                </p>
+                <Image src={DottedRed3Image} alt="dotted" width={400} className="absolute -right-[55%] top-[100%]" />
+              </div>
+            </div>
+            <div className="self-center">
+              <Image src={Group2Image} alt="group" width={400} />
             </div>
           </div>
         </div>
       </section>
       <AlertSection></AlertSection>
       <section id="beneficios">
-        <div className="container mx-auto py-10">
+        <div className="container mx-auto py-10 max-w-5xl">
           <div className="min-h-screen w-full flex flex-col items-center">
             <SectionTitle><span>Beneficios de <em>Alerta Barrio</em></span></SectionTitle>
             <div className="grid grid-cols-[2fr_1fr] gap-x-10 mt-20 ">
