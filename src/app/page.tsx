@@ -38,7 +38,7 @@ export default function Home() {
               ¿Qué es <em className="font-[900] italic">Alerta Barrio</em>?
             </span>
           </SectionTitle>
-          <div className="text-theme-red mt-20 font-[500] rounded-2xl bg-black px-5 py-2 text-lg">
+          <div className="text-white mt-20 font-[500] rounded-2xl bg-black px-5 py-2 text-lg">
             Alerta Barrio te ofrece el control total de tu seguridad y la de tus
             seres queridos.
           </div>
