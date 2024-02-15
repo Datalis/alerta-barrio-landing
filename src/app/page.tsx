@@ -90,7 +90,7 @@ export default function Home() {
         <Image src={CirclesImage} alt="circle" width={200} className="absolute -right-20 -scale-x-[1] top-[200vh] z-10" />
         <div className="section-clip-1"></div>
         <div className="section-clip-2"></div>
-        <div className="section-clip-3"></div>
+        {/* <div className="section-clip-3"></div> */}
         <div className="container mx-auto py-10 max-w-5xl">
           <div className="min-h-screen w-full flex flex-col items-center z-10 relative">
             <SectionTitle><span className="font-[500]">Beneficios de <em className="font-[900] italic">Alerta Barrio</em></span></SectionTitle>
