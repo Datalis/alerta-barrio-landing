@@ -23,11 +23,11 @@ export default function RootLayout({
       <body className={codecPro.variable}>
         {children}
         <Footer></Footer>
-        <Script
+        {/* <Script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js"
           async={true}
           defer={true}
-        />
+        /> */}
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="container mx-auto p-5 flex items-center justify-center gap-10">
+      <div className="container mx-auto p-5 flex items-center flex-wrap justify-center gap-10">
         <Image src={Logo} alt="Logo" width={50} />
         <span className="text-white text-xs">
           Copyright © 2003-2024 Alerta Barrio. Todos los derechos reservados.

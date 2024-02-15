@@ -64,17 +64,19 @@ export default function AlertSection() {
       <div className="section-clip-3"></div>
       <Image src={CirclesImage} alt="circle" width={200} className="absolute -left-16 -top-20" />
       <div className="container relative z-10 mx-auto flex h-full flex-col items-center">
-        <SectionTitle>
-          <span className="text-theme-red font-[500]">
-            Alarmas y <em className="italic font-[900]">llamadas</em>
-          </span>
-        </SectionTitle>
+        <div className="hidden lg:block">
+          <SectionTitle>
+            <span className="text-theme-red font-[500]">
+              Alarmas y <em className="italic font-[900]">llamadas</em>
+            </span>
+          </SectionTitle>
+        </div>
         <div className="relative h-full w-full flex-1">
           <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
             <div className="relative">
               <Image src={CellSoundImage} alt="911" width={350} />
               <Image src={DottedLine1} alt="dotted line" className="absolute -right-32 top-0 bottom-0 my-auto" width={150} />
-              <p className="absolute bottom-28 left-[100%] whitespace-nowrap text-white font-[500]">
+              <p className="absolute w-full text-sm lg:text-base text-center lg:text-left mt-10 lg:mt-0 lg:bottom-28 lg:left-[100%] whitespace-nowrap text-white font-[500]">
                 Presionas el botón en el aplicativo <br /> y de inmediato las{" "}
                 sirenas distribuidas <br /> en el barrio emiten un fuerte
                 sonido.
@@ -85,7 +87,7 @@ export default function AlertSection() {
             <div className="relative">
               <Image src={CellSilenceImage} alt="911" width={350} />
               <Image src={DottedLine2} alt="dotted line" className="absolute -left-32 top-0 bottom-0 my-auto" width={150} />
-              <p className="absolute top-28 right-[100%] whitespace-nowrap font-[500]">
+              <p className="absolute w-full text-sm lg:text-base text-center lg:text-left mt-10 lg:mt-0 lg:top-28 lg:right-[100%] whitespace-nowrap font-[500]">
                 Presionas el botón en el aplicativo <br /> y se envía de inmediato
                 un mensaje de <br />
                 alarma al grupo de Whatsapp del <br />
@@ -97,7 +99,7 @@ export default function AlertSection() {
             <div className="relative">
               <Image src={Cell911Image} alt="911" width={350} className="mt-11" />
               <Image src={DottedLine1} alt="dotted line" className="absolute -right-32 -scale-y-[1] bottom-28 my-auto" width={150} />
-              <p className="absolute bottom-60 align-middle left-[100%] whitespace-nowrap text-white font-[500] ">
+              <p className="absolute w-full text-sm lg:text-base text-center lg:text-left lg:bottom-60 lg:align-middle lg:left-[100%] whitespace-nowrap text-white font-[500] ">
                 Alerta Barrio integra una característica <br /> escencial para tu seguridad, un botón <br /> directo de llamada al ECU 911.
                 Con solo <br /> un toque, puedes conectarte rapidamente <br /> con los servicios de emergencia.
               </p>
