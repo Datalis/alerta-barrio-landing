@@ -31,6 +31,7 @@ export default function Home() {
       <section id="que-es" className="relative">
         <Image src={DoubleCircleImage} alt="circle" width={200} className="absolute -left-24 top-0" />
         <Image src={DoubleCircleImage} alt="circle" width={200} className="absolute -right-16 top-72" />
+        
         <div className="container mx-auto flex flex-col items-center mt-20">
           <SectionTitle>
             <span className="font-[500]">
@@ -86,6 +87,7 @@ export default function Home() {
       </section>
       <AlertSection></AlertSection>
       <section id="beneficios" className="relative">
+        <Image src={CirclesImage} alt="circle" width={200} className="absolute -right-20 -scale-x-[1] top-[200vh] z-10" />
         <div className="section-clip-1"></div>
         <div className="section-clip-2"></div>
         <div className="section-clip-3"></div>
@@ -139,7 +141,6 @@ export default function Home() {
             </div>
           </div>
           <div className="min-h-screen flex flex-col z-10 relative">
-            <Image src={CirclesImage} alt="circle" width={200} className="absolute -right-36 -scale-x-[1] -top-0" />
             <div className="grid grid-cols-2 h-full flex-1 pt-0 pb-10">
               <div className="flex flex-col">
                 <Image src={Step3Image} alt="step1" width={150} />
