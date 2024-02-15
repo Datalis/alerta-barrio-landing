@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function Header() {
     return (
         <header id="header" className="h-screen flex flex-col">
-            <Image src={BgImage} alt="background" layout="fill" objectFit="cover" objectPosition="left" />
-            <Image src={CellImage} alt="cell"  className='absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10'/>
+            <Image src={BgImage} alt="background" className='absolute w-full h-full object-cover bg-right-bottom' />
+            <Image src={CellImage} alt="cell" className='absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10' />
             <div className="bg-theme-red h-[50%] flex p-20 clip-1">
                 <h1 className="text-[43px] text-center text-white uppercase leading-tight">
                     <span className='font-[500]'>Barrios</span> <span className='font-[900]'>seguros</span>,<br />
