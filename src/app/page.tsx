@@ -21,15 +21,23 @@ import Group2Image from "@/lib/assets/group-2.png";
 import DottedRed3Image from "@/lib/assets/dotted-red-3.png";
 import DottedRed2Image from "@/lib/assets/dotted-red-2.png";
 import DottedRed1Image from "@/lib/assets/dotted-red-1.png";
+import DoubleCircleImage from "@/lib/assets/DOBLE-CIRCULO.png";
+import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.png";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Header></Header>
-      <section id="que-es" className="">
+      <section id="que-es" className="relative">
+        <Image src={DoubleCircleImage} alt="circle" width={200} className="absolute -left-24 top-0" />
+        <Image src={DoubleCircleImage} alt="circle" width={200} className="absolute -right-16 top-72" />
         <div className="container mx-auto flex flex-col items-center mt-20">
-          <SectionTitle>¿Qué es Alerta Barrio?</SectionTitle>
-          <div className="text-theme-red mt-20 rounded-2xl bg-black px-5 py-2 text-lg">
+          <SectionTitle>
+            <span className="font-[500]">
+              ¿Qué es <em className="font-[900] italic">Alerta Barrio</em>?
+            </span>
+          </SectionTitle>
+          <div className="text-theme-red mt-20 font-[500] rounded-2xl bg-black px-5 py-2 text-lg">
             Alerta Barrio te ofrece el control total de tu seguridad y la de tus
             seres queridos.
           </div>
@@ -46,25 +54,26 @@ export default function Home() {
       </section>
       <section className="relative">
         <div className="container relative z-10 mx-auto flex flex-col items-center py-20 max-w-5xl">
-          <SectionTitle>¿Cómo funciona?</SectionTitle>
+          <SectionTitle><span className="font-[500]">
+            ¿Cómo funciona?</span></SectionTitle>
           <div className="grid grid-cols-3 mt-20 gap-10">
             <div>
               <Image src={AlertImage} alt="alert" width={350} />
             </div>
             <div className="self-center">
-              <p className="font-light">Con Alerta Barrio, tienes
-                acceso a un aplicativo móvil
+              <p className="font-light">Con Alerta Barrio, tienes <br />
+                acceso a un aplicativo móvil <br />
                 que te permite activar </p>
               <div className="relative">
-                <span className="text-5xl font-black block mt-5">2 tipos</span>
-                <span className="font-bold">diferentes de alarmas</span>
+                <span className="text-5xl font-[500] block mt-5">2 tipos</span>
+                <span className="font-[500]">diferentes de alarmas</span>
                 <Image src={DottedRed2Image} alt="dotted" width={150} className="absolute -right-5 top-0 bottom-0 my-auto" />
               </div>
               <div className="relative">
-                <p className="mt-20">
+                <p className="mt-20 font-light">
                   También
-                  <span className="font-bold"> puedes comunicarte 
-                    rápidamente <br /> con el ECU 911</span>.
+                  <span className="font-[500]"> puedes comunicarte
+                    rápidamente con el ECU 911</span>.
                 </p>
                 <Image src={DottedRed3Image} alt="dotted" width={400} className="absolute -right-[55%] top-[100%]" />
               </div>
@@ -76,17 +85,23 @@ export default function Home() {
         </div>
       </section>
       <AlertSection></AlertSection>
-      <section id="beneficios">
+      <section id="beneficios" className="relative">
+        <div className="section-clip-1"></div>
+        <div className="section-clip-2"></div>
+        <div className="section-clip-3"></div>
         <div className="container mx-auto py-10 max-w-5xl">
-          <div className="min-h-screen w-full flex flex-col items-center">
-            <SectionTitle><span>Beneficios de <em>Alerta Barrio</em></span></SectionTitle>
+          <div className="min-h-screen w-full flex flex-col items-center z-10 relative">
+            <SectionTitle><span className="font-[500]">Beneficios de <em className="font-[900] italic">Alerta Barrio</em></span></SectionTitle>
             <div className="grid grid-cols-[2fr_1fr] gap-x-10 mt-20 ">
               <div className="flex flex-col items-start">
                 <Image src={Step1Image} alt="step1" width={150} />
-                <span className="font-bold mt-5">El sistema de seguridad de Alerta Barrio está <br />
+                <span className="font-[500] mt-5">El sistema de seguridad de Alerta Barrio está <br />
                   diseñado para que actives una alarma en segundos: </span>
-                <div className="bg-black rounded-xl w-[60%] h-14 mt-5"></div>
-                <div className="grid grid-cols-2 grid-rows-3 gap-x-10 gap-y-4 ml-auto mt-20 font-bold">
+                <div className="bg-black rounded-xl text-white  px-8 py-3 mt-5 font-[500] leading-tight">
+                  Solo abres la aplicación, presionas <br />
+                  un botón … ¡y eso es todo!
+                </div>
+                <div className="grid grid-cols-2 grid-rows-3 gap-x-10 gap-y-4 ml-auto mr-20 mt-28 font-[500]">
                   <span className="before:h-full before:rounded-lg before:w-1 before:-left-4 before:bg-theme-red before:absolute relative">Fácil</span>
                   <span className="before:h-full before:rounded-lg before:w-1 before:-left-4 before:bg-theme-red before:absolute relative">Inmediato</span>
                   <span className="before:h-full before:rounded-lg before:w-1 before:-left-4 before:bg-theme-red before:absolute relative">24/7</span>
@@ -99,15 +114,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="min-h-screen">
+          <div className="min-h-[90vh] z-10 relative">
             <Image src={Step2Image} alt="step1" width={150} />
             <div className="flex items-center gap-20 mt-10">
-              <p className="inline">Puedes activar las alarmas en
-                <span className="font-bold"> cualquier momento y desde <br />
+              <p className="inline font-light">Puedes activar las alarmas en
+                <span className="font-[500]"> cualquier momento y desde <br />
                   cualquier lugar</span>
                 , ya sea mientras disfrutas de unas vacaciones <br />
                 en la playa o incluso desde otro país.</p>
-              <span className="bg-black px-8 py-3 rounded-2xl text-white text-lg font-bold">
+              <span className="bg-black px-8 py-3 rounded-2xl text-white text-lg font-[500] leading-tight">
                 Lo único que necesitas es tener <br />
                 conexión a internet.</span>
             </div>
@@ -123,22 +138,23 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="min-h-screen flex flex-col">
-            <div className="grid grid-cols-2 h-full flex-1 py-20">
+          <div className="min-h-screen flex flex-col z-10 relative">
+            <Image src={CirclesImage} alt="circle" width={200} className="absolute -right-36 -scale-x-[1] -top-0" />
+            <div className="grid grid-cols-2 h-full flex-1 pt-0 pb-10">
               <div className="flex flex-col">
                 <Image src={Step3Image} alt="step1" width={150} />
-                <p className="mt-10">
+                <p className="mt-10 font-light">
                   Cada comunidad puede disfrutar de una cobertura <br />
                   completa, con la posibilidad de incluir hasta <br />
-                  <span className="font-bold"> 5
+                  <span className="font-[500]"> 5
                     sirenas por cada alarma.</span>
                 </p>
                 <Image src={AlarmaX5Image} alt="alarma" width={200} className="mt-10" />
               </div>
               <div className="self-end">
-                <p className="max-w-prose ml-20">
+                <p className="max-w-prose font-light ml-20">
                   Además,
-                  <span className="font-bold"> es posible conectar al servicio a tantos
+                  <span className="font-[500]"> es posible conectar al servicio a tantos
                     residentes como sea necesario</span>,
                   de acuerdo con los
                   términos del acuerdo comercial.
@@ -147,24 +163,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col z-10 relative">
             <div className="grid grid-cols-2 flex-1 py-20 gap-x-10">
               <div className="flex flex-col">
                 <Image src={Step4Image} alt="step1" width={150} />
                 <Image src={GroupoSombraImage} alt="group" width={400} className="my-20" />
-                <span className="block self-end mt-auto bg-black px-8 py-3 rounded-2xl text-white text-lg font-bold">
+                <span className="block self-end mt-auto bg-black px-8 py-3 rounded-2xl text-white text-lg font-[500] leading-tight">
                   Ideal para los responsables de <br />
                   la
                   seguridad en la comunidad.</span>
               </div>
               <div className="self-end justify-self-end">
-                <Image src={MujerSeguridadImage} alt="group" className="mt-10" />
+                <Image src={MujerSeguridadImage} alt="group" width={400} className="mt-10" />
               </div>
             </div>
           </div>
         </div>
+        <ContactForm></ContactForm>
       </section>
-      <ContactForm></ContactForm>
+
     </main>
   );
 }

@@ -4,12 +4,13 @@
 
 
 body {
-
+  font-family: var(--font-codec-pro);
 }
 
 @layer components{
     .btn {
-      @apply border-2 border-black text-theme-red bg-white rounded-xl px-6 py-3 text-xl font-bold;
+      @apply border-2 border-black text-theme-red bg-white min-w-[150px] text-center rounded-xl px-2 py-3 text-xl font-[900];
+      letter-spacing: 1px;
     }
 }
 
@@ -25,10 +26,21 @@ body {
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
   }
 
-  .clip-how-it-works-section {
-    clip-path: polygon(calc(90% - 1px) 100%, 100% 80%, 100% 100%, 90% 100%);
+  .section-clip-1 {
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0 100%);
+    height: calc(200vh + 100px);
+    @apply bg-theme-gray-light absolute bottom-0 w-full z-0;
   }
-  .clip-alert-section {
-    clip-path: polygon(0 100%, 90% 0%, 100% 0%, 100% 100%);
+  .section-clip-2 {
+    clip-path: polygon(0 37%, 100% 0%, 100% 63%, 0 100%);
+    height: 300vh;
+    @apply bg-theme-gray-light absolute w-full z-0;
+    bottom: calc(200vh + 100px);
+  }
+  .section-clip-3 {
+    clip-path: polygon(0 50%, 100% 0%, 100% 50%, 0 100%);
+    height: 200vh;
+    @apply bg-theme-red absolute w-full z-0;
+    bottom: calc(400vh + 15px);
   }
 }

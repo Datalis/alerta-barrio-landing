@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-
+import { codecPro } from '@/lib/fonts'
+import Script from "next/script";
 export const runtime = "edge";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,9 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={codecPro.variable}>
         {children}
         <Footer></Footer>
+        <Script
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+          async={true}
+          defer={true}
+        />
       </body>
     </html>
   );

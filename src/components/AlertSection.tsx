@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useEffect } from "react";
+import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.png";
 
 export default function AlertSection() {
   useEffect(() => {
@@ -58,18 +59,19 @@ export default function AlertSection() {
   }, []);
 
   return (
-    <section id="alerts" className="relative h-screen">
-      <div className="container relative z-10 mx-auto flex h-full flex-col items-center pt-10">
+    <section id="alerts" className="relative h-screen pt-10 z-10">
+      <Image src={CirclesImage} alt="circle" width={200} className="absolute -left-16 -top-20" />
+      <div className="container relative z-10 mx-auto flex h-full flex-col items-center">
         <SectionTitle>
-          <span className="text-theme-red">
-            Alarmas y <em>llamadas</em>
+          <span className="text-theme-red font-[500]">
+            Alarmas y <em className="italic font-[900]">llamadas</em>
           </span>
         </SectionTitle>
         <div className="relative h-full w-full flex-1">
           <div className="scroll flex h-full w-full items-center justify-center">
             <div className="relative">
               <Image src={Cell911Image} alt="911" width={350} className="mt-10" />
-              <p className="absolute bottom-28 left-[100%] whitespace-nowrap text-sm font-bold">
+              <p className="absolute bottom-28 left-[100%] whitespace-nowrap text-sm font-[500]">
                 Presionas el botón en el aplicativo <br /> y de inmediato las{" "}
                 sirenas distribuidas <br /> en el barrio emiten un fuerte
                 sonido.
@@ -80,7 +82,7 @@ export default function AlertSection() {
           <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
             <div className="relative">
               <Image src={CellSilenceImage} alt="911" width={350} />
-              <p className="absolute top-28 right-[100%] whitespace-nowrap text-sm font-bold">
+              <p className="absolute top-28 right-[100%] whitespace-nowrap text-sm font-[500]">
                 Presionas el botón en el aplicativo <br /> y se envía de inmediato
                 un mensaje de <br />
                 alarma al grupo de Whatsapp del <br />
@@ -91,7 +93,7 @@ export default function AlertSection() {
           <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
             <div className="relative">
               <Image src={CellSoundImage} alt="911" width={350} />
-              <p className="absolute bottom-40 align-middle left-[100%] whitespace-nowrap text-sm font-bold ">
+              <p className="absolute bottom-40 align-middle left-[100%] whitespace-nowrap text-sm font-[500] ">
                 Alerta Barrio integra una característica <br /> escencial para tu seguridad, un botón <br /> directo de llamada al ECU 911.
                 Con solo <br /> un toque, puedes conectarte rapidamente <br /> con los servicios de emergencia.
               </p>
