@@ -50,7 +50,7 @@ export default function ContactForm() {
 
 
     return (
-        <div id="contact" className="min-h-screen pt-10 z-10 relative">
+        <div id="contact" className="min-h-screen pt-14 z-10 relative">
             <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+5930994170801" className="absolute right-0 bottom-10">
                 <Image src={ChatImage} alt='chat' width={120} className='' />
             </a>
