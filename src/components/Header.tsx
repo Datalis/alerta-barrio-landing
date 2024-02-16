@@ -14,8 +14,8 @@ export default function Header() {
             <Image src={CellImageMobile} alt="cell" className='lg:hidden absolute top-0 my-auto object-contain right-0 z-10' />
             <div className="bg-theme-red h-[50%] hidden lg:flex p-20 clip-1">
                 <h1 className="text-[43px] text-center text-white uppercase leading-tight">
-                    <span className='font-[500]'>Barrios</span> <span className='font-[900]'>seguros</span>,<br />
-                    <span className="bg-black rounded-lg px-4 pb-2 pt-3 font-[900]">Protección para todos</span>
+                    <span className='font-[500]'>Barrios</span> <span className='font-[900]'>seguros,</span><br />
+                    <span className="bg-black rounded-lg px-4 pb-3 pt-4 font-[900]">Protección <span className='font-[500]'>para todos</span></span>
                 </h1>
             </div>
             <div className="relative lg:bg-black mt-auto h-[40%] lg:h-[20%] flex items-center justify-center z-20 clip-2">

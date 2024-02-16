@@ -67,8 +67,8 @@ export default function AlertSection() {
       <div className="container relative z-10 mx-auto flex h-full flex-col items-center">
         <div className="hidden lg:block">
           <SectionTitle>
-            <span className="text-theme-red font-[500]">
-              Alarmas y <em className="italic font-[900]">llamadas</em>
+            <span className="font-[500]">
+              Alarmas y <em className="italic font-[900] text-theme-red">llamadas</em>
             </span>
           </SectionTitle>
         </div>

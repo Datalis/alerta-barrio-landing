@@ -6,11 +6,11 @@ export default function Footer() {
     <footer className="bg-black">
       <div className="container mx-auto p-5 flex items-center flex-wrap justify-center gap-10">
         <Image src={Logo} alt="Logo" width={50} />
-        <span className="text-white text-xs">
+        <span className="text-white text-sm">
           Copyright © 2003-2024 Alerta Barrio. Todos los derechos reservados.
         </span>
         <div className="flex items-center gap-5">
-          <span className="text-white flex items-center gap-1 text-xs">
+          <span className="text-white flex items-center gap-1 text-sm">
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ export default function Footer() {
             </svg>
             Ecuador
           </span>
-          <a href="mailto:info@alertabarrio.com" className="text-white flex items-center gap-1 text-xs">
+          <a href="mailto:info@alertabarrio.com" className="text-white flex items-center gap-1 text-sm">
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Footer() {
             </svg>
             info@alertabarrio.com
           </a>
-          <a href="tel:0994170801" className="text-white flex items-center gap-1 text-xs">
+          <a href="tel:0994170801" className="text-white flex items-center gap-1 text-sm">
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
