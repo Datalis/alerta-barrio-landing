@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useEffect } from "react";
 import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.png";
+import ParallaxPolygon from "./ParallaxPolygon";
 
 export default function AlertSection() {
   useEffect(() => {
@@ -61,7 +62,7 @@ export default function AlertSection() {
 
   return (
     <section id="alerts" className="relative h-screen pt-10 z-10">
-      <div className="section-clip-3"></div>
+      <ParallaxPolygon id="red-polygon" className="bg-theme-red absolute h-[200vh] w-full z-0 -bottom-[calc(100%+100px)]"></ParallaxPolygon>
       <Image src={CirclesImage} alt="circle" width={200} className="absolute -left-16 -top-20" />
       <div className="container relative z-10 mx-auto flex h-full flex-col items-center">
         <div className="hidden lg:block">
