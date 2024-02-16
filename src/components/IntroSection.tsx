@@ -12,13 +12,13 @@ export default function IntroSection() {
         <div className="px-14 lg:px-0 container mx-auto flex flex-col items-center mt-20">
           <SectionTitle>
             <span className="hidden lg:inline font-[500]">
-              ¿Qué es <em className="font-[900] italic">Alerta Barrio</em>?
+              ¿Qué es <em className="font-[900] italic text-theme-red">Alerta Barrio</em>?
             </span>
             <span className="lg:hidden flex flex-col items-center font-[500] leading-tight">
-              ¿Qué es <br /> <em className="font-[900] italic">Alerta Barrio?</em>
+              ¿Qué es <br /> <em className="font-[900] italic text-theme-red">Alerta Barrio?</em>
             </span>
           </SectionTitle>
-          <div className="text-white mt-20 font-[500] rounded-2xl bg-black px-5 py-2 text-lg">
+          <div className="text-white mt-20 font-[500] rounded-2xl bg-black px-10 py-3 text-lg">
             Alerta Barrio te ofrece el control total de tu seguridad y la de tus
             seres queridos.
           </div>
@@ -27,7 +27,7 @@ export default function IntroSection() {
               Con nuestro sistema de alarmas, activable en segundos desde tu
               celular
             </strong>
-            , puedes notificar <br /> de manera inmediata sobre cualquier
+            , puedes notificar de <br /> manera inmediata sobre cualquier
             amenaza que te afecte a ti, a tu familia y a todos en el barrio.
           </p>
           <Image src={ArrowImage} alt="arrow" width={50} className="mt-20" />

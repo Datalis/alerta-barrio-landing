@@ -56,7 +56,7 @@ export default function ContactForm() {
             </a>
             <div className="container mx-auto flex flex-col items-center max-w-5xl">
                 <SectionTitle>
-                    <span className="font-[500] text-white">Formulario de <span className="italic font-[900">Contacto</span></span>
+                    <span className="font-[500] ">Formulario de <span className="italic font-[900 text-theme-red">Contacto</span></span>
                 </SectionTitle>
                 <div className="grid grid-cols-2 items-center gap-10 mt-20">
                     <form ref={formRef} onSubmit={onSubmit} className='flex flex-col text-xl font-[500] '>

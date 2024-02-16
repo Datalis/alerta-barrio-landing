@@ -10,7 +10,7 @@ export default function HowItWorksSection() {
         <section className="relative">
         <div className="px-14 lg:px-0 container relative z-10 mx-auto flex flex-col items-center py-20 max-w-5xl">
           <SectionTitle>
-            <span className="hidden lg:inline font-[500]">¿Cómo funciona?</span>
+            <span className="hidden lg:inline font-[500]">¿Cómo <span className="text-theme-red font-[900] italic">funciona</span>?</span>
             <span className="lg:hidden flex flex-col items-center font-[500] leading-tight">
               ¿Como <br /> <span><em className="font-[900] italic text-theme-red">funciona</em>?</span>
             </span>
@@ -20,16 +20,16 @@ export default function HowItWorksSection() {
               <Image src={AlertImage} alt="alert" width={350} />
             </div>
             <div className="self-center">
-              <p className="font-light text-center lg:text-left">Con Alerta Barrio, tienes <br />
+              <p className="font-light text-center lg:text-left leading-tight">Con Alerta Barrio, tienes <br />
                 acceso a un aplicativo móvil <br />
                 que te permite activar <span className="font-[500] lg:hidden">2 tipos diferentes de alarma</span> </p>
               <div className="relative hidden lg:block">
-                <span className="text-5xl font-[500] block mt-5">2 tipos</span>
+                <span className="text-5xl font-[500] block mt-5 text-theme-red">2 tipos</span>
                 <span className="font-[500]">diferentes de alarmas</span>
                 <Image src={DottedRed2Image} alt="dotted" width={150} className="absolute -right-5 top-0 bottom-0 my-auto" />
               </div>
               <div className="relative hidden lg:block">
-                <p className="mt-20 font-light">
+                <p className="mt-20 font-light leading-tight">
                   También
                   <span className="font-[500]"> puedes comunicarte
                     rápidamente con el ECU 911</span>.
