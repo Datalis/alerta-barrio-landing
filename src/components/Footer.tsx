@@ -22,7 +22,7 @@ export default function Footer() {
             </svg>
             Ecuador
           </span>
-          <a href="mailto:info@alertabarrio.com" className="text-white flex items-center gap-1 text-xs">
+          <a href="mailto:info@alertabarrio.com" className="text-white flex items-center gap-1 text-sm">
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Footer() {
             </svg>
             info@alertabarrio.com
           </a>
-          <a href="tel:0994170801" className="text-white flex items-center gap-1 text-xs">
+          <a href="tel:0994170801" className="text-white flex items-center gap-1 text-sm">
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
