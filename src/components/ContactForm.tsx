@@ -50,15 +50,16 @@ export default function ContactForm() {
 
 
     return (
-        <div id="contact" className="min-h-screen pt-10 z-10 relative">
+        <div id="contact" className="lg:min-h-screen pt-14 z-10 relative">
             <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+5930994170801" className="absolute right-0 bottom-10">
-                <Image src={ChatImage} alt='chat' width={120} className='' />
+                <Image src={ChatImage} alt='chat' className='w-[80px] lg:w-[120px]' />
             </a>
-            <div className="container mx-auto flex flex-col items-center max-w-5xl">
+            <div className="px-14 lg:px-0 container mx-auto flex flex-col items-center max-w-5xl">
                 <SectionTitle>
-                    <span className="font-[500] text-white">Formulario de <span className="italic font-[900">Contacto</span></span>
+                    <span className="font-[500] hidden lg:block">Formulario de <span className="italic font-[900 text-theme-red">Contacto</span></span>
+                    <span className="font-[500] lg:hidden flex flex-col">Formulario <span className="">de <span className="italic font-[900] text-theme-red">Contacto</span></span></span>
                 </SectionTitle>
-                <div className="grid grid-cols-2 items-center gap-10 mt-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 mt-20">
                     <form ref={formRef} onSubmit={onSubmit} className='flex flex-col text-xl font-[500] '>
                         <div
                             className="cf-turnstile checkbox mt-4"
@@ -72,9 +73,9 @@ export default function ContactForm() {
                         {success && <div className="text-teal-700 text-[1rem] mt-1">Mensaje enviado con éxito</div>}
                         <button disabled={pending} type='submit' className={`btn disabled:bg-theme-gray-light mx-auto mt-10`}>Enviar</button>
                     </form>
-                    <Image src={FormImage} alt='' width={400} className='h-full object-contain'></Image>
+                    <Image src={FormImage} alt='' width={400} className='h-36 lg:h-full object-contain'></Image>
                 </div>
-                </div>
+            </div>
         </div>
     );
 }
