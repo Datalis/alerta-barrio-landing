@@ -9,7 +9,7 @@ export default function SectionTitle({
         {children}
       </h3>
       <svg
-        className="absolute -bottom-4 -left-10 lg:-left-14 -right-7"
+        className="absolute -bottom-4 -left-10 md:-left-14 -right-7"
        
         viewBox="0 0 149.47546 13.248223"
         version="1.1"

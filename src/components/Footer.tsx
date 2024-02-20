@@ -9,7 +9,7 @@ export default function Footer() {
         <span className="text-white text-sm text-center">
           Copyright © 2003-2024 Alerta Barrio. Todos los derechos reservados.
         </span>
-        <div className="flex lg:flex-row flex-col items-center gap-2 lg:gap-5">
+        <div className="flex md:flex-row flex-col items-center gap-2 md:gap-5">
           <span className="text-white flex items-center gap-1 text-sm">
             <svg
               className="fill-theme-red"
