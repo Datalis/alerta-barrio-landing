@@ -54,10 +54,11 @@ export default function ContactForm() {
             <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+5930994170801" className="absolute right-0 bottom-10">
                 <Image src={ChatImage} alt='chat' className='w-[80px] md:w-[120px]' />
             </a>
+
             <div className="px-14 md:px-0 container mx-auto flex flex-col items-center max-w-5xl">
                 <SectionTitle>
                     <span className="font-[500] hidden md:block">Formulario de <span className="italic font-[900 text-theme-red">Contacto</span></span>
-                    <span className="font-[500] md:hidden flex flex-col">Formulario <span className="">de <span className="italic font-[900] text-theme-red">Contacto</span></span></span>
+                    <span className="font-[500] md:hidden">Formulario <br /> de <em className="italic font-[900] text-theme-red">Contacto</em></span>
                 </SectionTitle>
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mt-20">
                     <form ref={formRef} onSubmit={onSubmit} className='flex flex-col text-xl font-[500] '>

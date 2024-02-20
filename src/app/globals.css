@@ -12,6 +12,13 @@ body {
       @apply border-2 border-black text-theme-red bg-white min-w-[150px] text-center rounded-xl px-2 py-3 text-xl font-[900];
       letter-spacing: 1px;
     }
+
+    .parallax-polygon {
+      clip-path: polygon(0 50%, 100% 0%, 100% 50%, 0 100%);
+      @media screen and (max-width: 768px) {
+        clip-path: polygon(0% 50%, 100% 25%, 100% 75%, 0 100%);
+      }
+    }
 }
 
 @layer utilities {
