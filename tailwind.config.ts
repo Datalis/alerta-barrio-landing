@@ -13,7 +13,7 @@ const config: Config = {
         'theme-gray-light': '#D5D5D5',
         'theme-gray-medium': '#B7B7B7',
         'theme-gray-dark': '#6B6B6B',
-      }
+      },
     },
   },
   plugins: [
