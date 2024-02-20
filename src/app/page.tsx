@@ -19,7 +19,7 @@ export default function Home() {
       <HowItWorksSection></HowItWorksSection>
       <AlertSection></AlertSection>
       <section id="beneficios" className="relative bg-theme-gray-light">
-        <Image src={CirclesImage} alt="circle" width={200} className="absolute -right-20 -scale-x-[1] top-[180vh] z-10" />
+        <Image src={CirclesImage} alt="circle" width={200} className="hidden lg:block absolute -right-20 -scale-x-[1] top-[180vh] z-10" />
         <div className="relative">
           <ParallaxPolygon id="white-polygon" speed={1.5} className="bg-white h-[200vh] absolute w-full z-0 bottom-20"></ParallaxPolygon>
           <div className="px-14 lg:px-0 container mx-auto max-w-5xl relative">
