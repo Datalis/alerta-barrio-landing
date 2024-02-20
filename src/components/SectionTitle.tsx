@@ -4,13 +4,12 @@ export default function SectionTitle({
     children: React.ReactNode;
 }>) {
   return (
-    <div className="relative">
-      <h3 className="text-[38px] font-bold">
+    <div className="relative leading-tight">
+      <h3 className="text-[38px]">
         {children}
       </h3>
       <svg
-        className="absolute -bottom-4 -left-10 md:-left-14 -right-7"
-       
+        className="absolute -left-4 right-0 md:-left-14"
         viewBox="0 0 149.47546 13.248223"
         version="1.1"
         id="svg1"

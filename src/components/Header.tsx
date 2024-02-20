@@ -25,7 +25,7 @@ export default function Header() {
 
 
     return (
-        <header id="header" className="h-screen flex flex-col">
+        <header id="header" className="h-svh flex flex-col">
             <Image src={BgImage} alt="background" className='hidden md:block absolute w-full h-full object-cover bg-right-bottom' />
             <Image src={BgMobile} alt="background" className='md:hidden absolute w-full h-full object-cover bg-center' />
             <Image src={CellImage} alt="cell" className='hidden md:block absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10' />
@@ -39,9 +39,9 @@ export default function Header() {
             <div className="relative md:bg-black mt-auto h-[40%] md:h-[20%] flex items-center justify-center z-20 clip-2">
                 <div className="header-links flex flex-col md:flex-row items-center md:items-end gap-6 md:gap-12">
                     <Image src={Logo} alt="Logo" width={80} className='mr-5 hidden md:block' />
-                    <a href="#how-it-works" className="text-black md:text-white text-3xl md:text-xl mb-4">Producto</a>
-                    <a href="#beneficios" className="text-black md:text-white text-3xl md:text-xl mb-4">Beneficios</a>
-                    <a href="#contact" className="text-black md:text-white text-3xl md:text-xl mb-4">Cotizar</a>
+                    <a href="#how-it-works" className="text-black md:text-white text-3xl md:text-xl mt-5 md:mt-0 md:mb-4">Producto</a>
+                    <a href="#beneficios" className="text-black md:text-white text-3xl md:text-xl md:mb-4">Beneficios</a>
+                    <a href="#contact" className="text-black md:text-white text-3xl md:text-xl md:mb-4">Cotizar</a>
                 </div>
             </div>
         </header>

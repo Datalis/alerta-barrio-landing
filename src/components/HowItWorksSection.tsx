@@ -8,7 +8,7 @@ import AlertImage from "@/lib/assets/alert.png";
 export default function HowItWorksSection() {
   return (
     <section id="how-it-works" className="relative">
-      <div className="px-14 md:px-0 container relative z-10 mx-auto flex flex-col items-center py-20 max-w-5xl">
+      <div className="px-14 md:px-0 container relative z-20 mx-auto flex flex-col items-center py-20 max-w-5xl">
         <SectionTitle>
           <span className="hidden md:inline font-[500]">¿Cómo <span className="text-theme-red font-[900] italic">funciona</span>?</span>
           <span className="md:hidden flex flex-col items-center font-[500] leading-tight">
