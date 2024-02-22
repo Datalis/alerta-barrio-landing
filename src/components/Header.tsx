@@ -9,6 +9,7 @@ import Image from "next/image";
 import { useEffect } from 'react';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import gsap from 'gsap';
+import Link from 'next/link';
 
 export default function Header() {
 
@@ -39,9 +40,9 @@ export default function Header() {
             <div className="relative md:bg-black mt-auto h-[40%] md:h-[20%] flex items-center justify-center z-20 clip-2">
                 <div className="header-links flex flex-col md:flex-row items-center md:items-end gap-6 md:gap-12">
                     <Image src={Logo} alt="Logo" width={80} className='mr-5 hidden md:block' />
-                    <a href="#how-it-works" className="text-black md:text-white text-3xl md:text-xl mt-5 md:mt-0 md:mb-4">Producto</a>
-                    <a href="#beneficios" className="text-black md:text-white text-3xl md:text-xl md:mb-4">Beneficios</a>
-                    <a href="#contact" className="text-black md:text-white text-3xl md:text-xl md:mb-4">Cotizar</a>
+                    <Link href="/#how-it-works" className="text-black md:text-white text-3xl md:text-xl mb-4">Producto</Link>
+                    <Link href="/#beneficios" className="text-black md:text-white text-3xl md:text-xl mb-4">Beneficios</Link>
+                    <Link href="/#contact" className="text-black md:text-white text-3xl md:text-xl mb-4">Cotizar</Link>
                 </div>
             </div>
         </header>
