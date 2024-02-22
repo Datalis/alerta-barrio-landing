@@ -5,6 +5,11 @@
 
 body {
   font-family: var(--font-codec-pro);
+  @apply min-h-screen flex flex-col;
+}
+
+body main {
+  @apply flex-1;
 }
 
 @layer components{
