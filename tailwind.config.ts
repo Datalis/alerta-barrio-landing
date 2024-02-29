@@ -9,15 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'theme-red': '#FF4656',
-        'theme-gray-light': '#D5D5D5',
-        'theme-gray-medium': '#B7B7B7',
-        'theme-gray-dark': '#6B6B6B',
+        "theme-red": "#FF4656",
+        "theme-gray-light": "#D5D5D5",
+        "theme-gray-medium": "#B7B7B7",
+        "theme-gray-dark": "#6B6B6B",
       },
     },
+    screens: {
+      md: "960px",
+    },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

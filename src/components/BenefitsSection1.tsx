@@ -30,7 +30,7 @@ export default function BenefitsSection1() {
             <br className="hidden md:inline" />
             un botón … ¡y eso es todo!
           </div>
-          <div className="mt-5 grid grid-cols-2 grid-rows-3 gap-x-10 font-[500] md:ml-auto md:mr-20 md:mt-28 md:gap-y-4">
+          <div className="mt-5 grid grid-cols-2 grid-rows-3 gap-x-10 font-[500] md:ml-auto md:mr-20 md:mt-32 md:gap-y-4">
             <span className="before:bg-theme-red relative before:absolute before:-left-4 before:h-full before:w-1 before:rounded-lg">
               Fácil
             </span>

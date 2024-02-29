@@ -63,13 +63,11 @@ export default function AlarmsSection() {
   }, []);
 
   return (
-    <section
-      id="alerts"
-      className="h-[calc[100svh - 80px]] relative z-10 pt-10"
-    >
+    <section id="alerts" className="relative z-10 h-screen pt-10">
       <ParallaxPolygon
         id="red-polygon"
-        className="bg-theme-red absolute bottom-[calc(-80%)] z-0 h-[200vh] w-full md:-bottom-[calc(100%+100px)]"
+        className="bg-theme-red absolute -bottom-[50%] z-0 h-[200vh] w-full md:-bottom-[100%]"
+        speed={0}
       ></ParallaxPolygon>
       <Image
         src={CirclesImage}
