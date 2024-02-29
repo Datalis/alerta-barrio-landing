@@ -4,13 +4,14 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="container mx-auto p-5 flex items-center flex-wrap justify-center gap-10">
+      <div className="container mx-auto flex flex-col flex-wrap items-center justify-center gap-10 p-5 md:flex-row">
         <Image src={Logo} alt="Logo" width={50} />
-        <span className="text-white text-sm text-center">
-          Copyright © 2003-2024 Alerta Barrio. Todos los derechos reservados.
+        <span className="text-center text-sm text-white">
+          Copyright © 2003-2024 Alerta Barrio. <br className="md:hidden" />{" "}
+          Todos los derechos reservados.
         </span>
-        <div className="flex md:flex-row flex-col items-center gap-2 md:gap-5">
-          <span className="text-white flex items-center gap-1 text-sm">
+        <div className="flex flex-col items-center gap-2 md:flex-row md:gap-5">
+          <span className="flex items-center gap-1 text-sm text-white">
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +23,10 @@ export default function Footer() {
             </svg>
             Ecuador
           </span>
-          <a href="mailto:info@alertabarrio.com" className="text-white flex items-center gap-1 text-sm">
+          <a
+            href="mailto:info@alertabarrio.com"
+            className="flex items-center gap-1 text-sm text-white"
+          >
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +38,10 @@ export default function Footer() {
             </svg>
             info@alertabarrio.com
           </a>
-          <a href="tel:0994170801" className="text-white flex items-center gap-1 text-sm">
+          <a
+            href="tel:0994170801"
+            className="flex items-center gap-1 text-sm text-white"
+          >
             <svg
               className="fill-theme-red"
               xmlns="http://www.w3.org/2000/svg"
