@@ -2,39 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: var(--font-codec-pro);
-  @apply min-h-screen flex flex-col;
+    font-family: var(--font-codec-pro);
+    @apply flex min-h-screen flex-col;
 }
 
 body main {
-  @apply flex-1;
+    @apply flex-1;
 }
 
-@layer components{
+@layer components {
     .btn {
-      @apply border-2 border-black text-theme-red bg-white min-w-[150px] text-center rounded-xl px-2 py-3 text-xl font-[900];
-      letter-spacing: 1px;
+        @apply text-theme-red min-w-[150px] rounded-xl border-2 border-black bg-white px-2 py-3 text-center text-xl font-[900];
+        letter-spacing: 1px;
     }
 
     .parallax-polygon {
-      clip-path: polygon(0 50%, 100% 0%, 100% 50%, 0 100%);
-      @media screen and (max-width: 768px) {
-        clip-path: polygon(0% 50%, 100% 25%, 100% 75%, 0 100%);
-      }
+        clip-path: polygon(0 50%, 100% 0%, 100% 50%, 0 100%);
+        @media screen and (max-width: 960px) {
+            clip-path: polygon(0% 50%, 100% 25%, 100% 75%, 0 100%);
+        }
     }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 
-  .clip-1 {
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  }
-  .clip-2 {
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  }
+    .clip-1 {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    }
+    .clip-2 {
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    }
 }

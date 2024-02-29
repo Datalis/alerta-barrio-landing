@@ -18,11 +18,20 @@ export default function Home() {
       <IntroSection></IntroSection>
       <HowItWorksSection></HowItWorksSection>
       <AlarmsSection></AlarmsSection>
-      <section id="beneficios" className="relative bg-theme-gray-light">
-        <Image src={CirclesImage} alt="circle" width={200} className="hidden md:block absolute -right-20 -scale-x-[1] top-[180vh] z-10" />
+      <section id="beneficios" className="bg-theme-gray-light relative">
+        <Image
+          src={CirclesImage}
+          alt="circle"
+          width={200}
+          className="absolute -right-20 top-[180vh] z-10 hidden -scale-x-[1] md:block"
+        />
         <div className="relative">
-          <ParallaxPolygon id="white-polygon" speed={1.5} className="bg-white h-[200vh] absolute w-full z-0 bottom-20"></ParallaxPolygon>
-          <div className="px-14 md:px-0 container mx-auto max-w-5xl relative">
+          <ParallaxPolygon
+            id="white-polygon"
+            speed={1.5}
+            className="absolute -bottom-28 z-0  h-[200vh] w-full bg-white"
+          ></ParallaxPolygon>
+          <div className="container relative mx-auto max-w-5xl px-14 md:px-0">
             <BenefitsSection1></BenefitsSection1>
             <BenefitsSection2></BenefitsSection2>
             <BenefitsSection3></BenefitsSection3>
@@ -31,7 +40,6 @@ export default function Home() {
         </div>
         <ContactForm></ContactForm>
       </section>
-
     </main>
   );
 }

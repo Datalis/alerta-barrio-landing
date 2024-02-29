@@ -54,46 +54,79 @@ export default function AlarmsSection() {
                 opacity: 0,
               });
             }
-          }
+          },
         },
         opacity: 1,
-      })
+      });
     });
     return () => ctx?.revert();
   }, []);
 
   return (
-    <section id="alerts" className="relative h-[calc[100svh - 80px]] pt-10 z-10">
-      <ParallaxPolygon id="red-polygon" className="bg-theme-red absolute h-[200svh] w-full z-0 bottom-[calc(-80%)] md:-bottom-[calc(100%+100px)]"></ParallaxPolygon>
-      <Image src={CirclesImage} alt="circle" width={200} className="hidden md:block absolute -left-16 -top-20" />
-      <Image src={DottedLine3} alt="lines" width={5} className="md:hidden absolute left-0 right-0 mx-auto -top-10" />
+    <section id="alerts" className="relative z-10 h-screen pt-10">
+      <ParallaxPolygon
+        id="red-polygon"
+        className="bg-theme-red absolute -bottom-[50%] z-0 h-[200vh] w-full md:-bottom-[100%]"
+        speed={0}
+      ></ParallaxPolygon>
+      <Image
+        src={CirclesImage}
+        alt="circle"
+        width={200}
+        className="absolute -left-16 -top-20 hidden md:block"
+      />
+      <Image
+        src={DottedLine3}
+        alt="lines"
+        width={5}
+        className="absolute -top-10 left-0 right-0 mx-auto md:hidden"
+      />
       <div className="container relative z-10 mx-auto flex h-full flex-col items-center">
         <div className="hidden md:block">
           <SectionTitle>
             <span className="font-[500]">
-              Alarmas y <em className="italic font-[900] text-theme-red">llamadas</em>
+              Alarmas y{" "}
+              <em className="text-theme-red font-[900] italic">llamadas</em>
             </span>
           </SectionTitle>
         </div>
         <div className="relative h-full w-full flex-1">
-          <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
+          <div className="scroll absolute left-0 top-0 flex h-full w-full items-center justify-center opacity-0">
             <div className="relative">
-              <Image src={CellSoundImage} alt="911" className="w-[300px] md:w-[350px]" />
-              <Image src={DottedLine1} alt="dotted line" className="hidden md:block absolute -right-32 top-0 bottom-0 my-auto" width={150} />
-              <p className="md:absolute w-full text-sm md:text-base text-center md:text-left mt-10 md:mt-0 md:bottom-28 md:left-[100%] whitespace-nowrap text-white font-[500]">
+              <Image
+                src={CellSoundImage}
+                alt="911"
+                className="w-[300px] md:w-[350px]"
+              />
+              <Image
+                src={DottedLine1}
+                alt="dotted line"
+                className="absolute -right-32 bottom-0 top-0 my-auto hidden md:block"
+                width={150}
+              />
+              <p className="mt-10 w-full whitespace-nowrap text-center text-sm font-[500] text-white md:absolute md:bottom-28 md:left-[100%] md:mt-0 md:text-left md:text-base">
                 Presionas el botón en el aplicativo <br /> y de inmediato las{" "}
                 sirenas distribuidas <br /> en el barrio emiten un fuerte
                 sonido.
               </p>
             </div>
           </div>
-          <div className="scroll absolute top-0 left-0 flex items-center justify-center w-full h-full opacity-0">
+          <div className="scroll absolute left-0 top-0 flex h-full w-full items-center justify-center opacity-0">
             <div className="relative">
-              <Image src={CellSilenceImage} alt="911" className="w-[300px] md:w-[350px]" />
-              <Image src={DottedLine2} alt="dotted line" className="hidden md:block absolute -left-32 top-0 bottom-0 my-auto" width={150} />
-              <p className="text-white md:text-black md:absolute w-full text-sm md:text-base text-center md:text-left mt-10 md:mt-0 md:top-28 md:right-[100%] whitespace-nowrap font-[500]">
-                Presionas el botón en el aplicativo <br /> y se envía de inmediato
-                un mensaje de <br />
+              <Image
+                src={CellSilenceImage}
+                alt="911"
+                className="w-[300px] md:w-[350px]"
+              />
+              <Image
+                src={DottedLine2}
+                alt="dotted line"
+                className="absolute -left-32 bottom-0 top-0 my-auto hidden md:block"
+                width={150}
+              />
+              <p className="mt-10 w-full whitespace-nowrap text-center text-sm font-[500] text-white md:absolute md:right-[100%] md:top-28 md:mt-0 md:text-left md:text-base md:text-black">
+                Presionas el botón en el aplicativo <br /> y se envía de
+                inmediato un mensaje de <br />
                 alarma al grupo de Whatsapp del <br />
                 barrio con tu ubicación GPS.
               </p>
@@ -101,11 +134,22 @@ export default function AlarmsSection() {
           </div>
           <div className="scroll flex h-full w-full items-center justify-center">
             <div className="relative">
-              <Image src={Cell911Image} alt="911" className="w-[300px] md:w-[350px] md:mt-11" />
-              <Image src={DottedLine1} alt="dotted line" className="hidden md:block absolute -right-32 -scale-y-[1] bottom-28 my-auto" width={150} />
-              <p className="md:absolute w-full text-sm md:text-base text-center md:text-left md:bottom-60 md:align-middle md:left-[100%] whitespace-nowrap text-white font-[500] ">
-                Alerta Barrio integra una característica <br /> escencial para tu seguridad, un botón <br /> directo de llamada al ECU 911.
-                Con solo <br /> un toque, puedes conectarte rapidamente <br /> con los servicios de emergencia.
+              <Image
+                src={Cell911Image}
+                alt="911"
+                className="w-[300px] md:mt-11 md:w-[350px]"
+              />
+              <Image
+                src={DottedLine1}
+                alt="dotted line"
+                className="absolute -right-32 bottom-28 my-auto hidden -scale-y-[1] md:block"
+                width={150}
+              />
+              <p className="w-full whitespace-nowrap text-center text-sm font-[500] text-white md:absolute md:bottom-60 md:left-[100%] md:text-left md:align-middle md:text-base ">
+                Alerta Barrio integra una característica <br /> escencial para
+                tu seguridad, un botón <br /> directo de llamada al ECU 911. Con
+                solo <br /> un toque, puedes conectarte rapidamente <br /> con
+                los servicios de emergencia.
               </p>
               {/* <Image src={DottedLine1} alt="dotted line" className="absolute -right-32 top-0 bottom-0 my-auto" width={150} /> */}
             </div>
