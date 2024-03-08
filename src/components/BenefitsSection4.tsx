@@ -1,7 +1,7 @@
 import Image from "next/image";
-import GroupoSombraImage from "@/lib/assets/GRUPO-SOMBRA.png";
-import MujerSeguridadImage from "@/lib/assets/MUJER-SEGURIDAD.png";
-import Step4Image from "@/lib/assets/4.png";
+import GroupoSombraImage from "@/lib/assets/GRUPO-SOMBRA.webp";
+import MujerSeguridadImage from "@/lib/assets/MUJER-SEGURIDAD.webp";
+import Step4Image from "@/lib/assets/4.webp";
 
 export default function BenefitsSection4() {
     return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Step3Image from "@/lib/assets/3.png";
-import AlarmaX5Image from "@/lib/assets/ALARMA-X5.png";
-import GroupImage from "@/lib/assets/group.png";
+import Step3Image from "@/lib/assets/3.webp";
+import AlarmaX5Image from "@/lib/assets/ALARMA-X5.webp";
+import GroupImage from "@/lib/assets/group.webp";
 
 export default function BenefitsSection3() {
     return (

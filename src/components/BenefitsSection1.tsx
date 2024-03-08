@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
-import Step1Image from "@/lib/assets/1.png";
-import AppImage from "@/lib/assets/app.png";
+import Step1Image from "@/lib/assets/1.webp";
+import AppImage from "@/lib/assets/app.webp";
 
 export default function BenefitsSection1() {
   return (

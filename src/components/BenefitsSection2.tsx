@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Step2Image from "@/lib/assets/2.png";
-import PlayaImage from "@/lib/assets/PLAYA.png";
-import PlayaImageMobile from '@/lib/assets/PLAYA-MOBILE.png';
-import ViajeImage from "@/lib/assets/VIAJE.png";
-import WifiLogo from "@/lib/assets/wifi.png";
+import Step2Image from "@/lib/assets/2.webp";
+import PlayaImage from "@/lib/assets/PLAYA.webp";
+import PlayaImageMobile from '@/lib/assets/PLAYA-MOBILE.webp';
+import ViajeImage from "@/lib/assets/VIAJE.webp";
+import WifiLogo from "@/lib/assets/wifi.webp";
 
 export default function BenefitsSection2() {
     return (

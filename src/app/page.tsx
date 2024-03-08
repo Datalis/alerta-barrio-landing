@@ -2,7 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import Header from "@/components/Header";
 import Image from "next/image";
 import AlarmsSection from "@/components/AlarmsSection";
-import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.png";
+import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.webp";
 import IntroSection from "@/components/IntroSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import BenefitsSection1 from "@/components/BenefitsSection1";

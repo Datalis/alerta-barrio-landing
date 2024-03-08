@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "@/lib/assets/logo.png";
+import Logo from "@/lib/assets/logo.webp";
 import Link from "next/link";
 
 export default function BlogHeader() {

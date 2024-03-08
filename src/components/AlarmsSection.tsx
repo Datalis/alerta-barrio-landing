@@ -1,16 +1,16 @@
 "use client";
 import SectionTitle from "./SectionTitle";
-import Cell911Image from "@/lib/assets/cell-911.png";
-import CellSilenceImage from "@/lib/assets/cell-silence.png";
-import CellSoundImage from "@/lib/assets/cell-sound.png";
-import DottedLine1 from "@/lib/assets/dotted-line-1.png";
-import DottedLine2 from "@/lib/assets/dotted-black-1.png";
-import DottedLine3 from "@/lib/assets/LINEA-ALARMAS.png";
+import Cell911Image from "@/lib/assets/cell-911.webp";
+import CellSilenceImage from "@/lib/assets/cell-silence.webp";
+import CellSoundImage from "@/lib/assets/cell-sound.webp";
+import DottedLine1 from "@/lib/assets/dotted-line-1.webp";
+import DottedLine2 from "@/lib/assets/dotted-black-1.webp";
+import DottedLine3 from "@/lib/assets/LINEA-ALARMAS.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useEffect } from "react";
-import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.png";
+import CirclesImage from "@/lib/assets/CIRCULO-CIRCULITO.webp";
 import ParallaxPolygon from "./ParallaxPolygon";
 
 export default function AlarmsSection() {

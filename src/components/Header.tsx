@@ -1,10 +1,10 @@
 'use client';
 
-import BgImage from '@/lib/assets/bg.png';
-import BgMobile from '@/lib/assets/bg-mobile.png';
-import CellImage from '@/lib/assets/cell.png';
-import CellImageMobile from '@/lib/assets/cell-mobile.png';
-import Logo from "@/lib/assets/logo.png";
+import BgImage from '@/lib/assets/bg.webp';
+import BgMobile from '@/lib/assets/bg-mobile.webp';
+import CellImage from '@/lib/assets/cell.webp';
+import CellImageMobile from '@/lib/assets/cell-mobile.webp';
+import Logo from "@/lib/assets/logo.webp";
 import Image from "next/image";
 import { useEffect } from 'react';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
