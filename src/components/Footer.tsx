@@ -1,4 +1,4 @@
-import Logo from "@/lib/assets/logo.png";
+import Logo from "@/lib/assets/logo.webp";
 import Image from "next/image";
 
 export default function Footer() {

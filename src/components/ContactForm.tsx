@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import FormImage from "@/lib/assets/form.png";
+import FormImage from "@/lib/assets/form.webp";
 import SectionTitle from "./SectionTitle";
 import { useRef, useState } from "react";
-import ChatImage from "@/lib/assets/CHATEA.png";
+import ChatImage from "@/lib/assets/CHATEA.webp";
 
 export default function ContactForm() {
   const turnstile = process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY;

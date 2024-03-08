@@ -1,10 +1,10 @@
-import ArrowImage from "@/lib/assets/arrow.png";
+import ArrowImage from "@/lib/assets/arrow.webp";
 import SectionTitle from "./SectionTitle";
-import DoubleCircleImage from "@/lib/assets/DOBLE-CIRCULO.png";
-import WifiImage from "@/lib/assets/WIFI2.png";
-import WifiMobileImage from "@/lib/assets/WIFI2-MOBILE.png";
-import Circle1Image from "@/lib/assets/CIRCLE-1.png";
-import Circle2Image from "@/lib/assets/CIRCLE-2.png";
+import DoubleCircleImage from "@/lib/assets/DOBLE-CIRCULO.webp";
+import WifiImage from "@/lib/assets/WIFI2.webp";
+import WifiMobileImage from "@/lib/assets/WIFI2-MOBILE.webp";
+import Circle1Image from "@/lib/assets/CIRCLE-1.webp";
+import Circle2Image from "@/lib/assets/CIRCLE-2.webp";
 import Image from "next/image";
 
 export default function IntroSection() {

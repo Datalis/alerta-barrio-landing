@@ -1,9 +1,9 @@
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
-import Group2Image from "@/lib/assets/group-2.png";
-import DottedRed3Image from "@/lib/assets/dotted-red-3.png";
-import DottedRed2Image from "@/lib/assets/dotted-red-2.png";
-import AlertImage from "@/lib/assets/alert.png";
+import Group2Image from "@/lib/assets/group-2.webp";
+import DottedRed3Image from "@/lib/assets/dotted-red-3.webp";
+import DottedRed2Image from "@/lib/assets/dotted-red-2.webp";
+import AlertImage from "@/lib/assets/alert.webp";
 
 export default function HowItWorksSection() {
   return (
