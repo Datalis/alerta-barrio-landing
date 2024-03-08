@@ -19,7 +19,7 @@ export default function Header() {
         btnLinks.forEach(link => {
             link.addEventListener('click', (e: any) => {
                 e.preventDefault();
-                gsap.to(window, { duration: 0.25, ease: 'power2.out', scrollTo: e.target.getAttribute('href') });
+                gsap.to(window, { duration: 0.25, ease: 'power2.out', scrollTo: `#${e.target.dataset.section}` });
             });
         });
     }, []);
@@ -27,10 +27,10 @@ export default function Header() {
 
     return (
         <header id="header" className="h-svh flex flex-col">
-            <Image src={BgImage} alt="background" className='hidden md:block absolute w-full h-full object-cover bg-right-bottom' />
-            <Image src={BgMobile} alt="background" className='md:hidden absolute w-full h-full object-cover bg-center' />
-            <Image src={CellImage} alt="cell" className='hidden md:block absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10' />
-            <Image src={CellImageMobile} alt="cell" className='md:hidden absolute top-0 my-auto object-contain right-0 z-10' />
+            <Image loading='eager' priority={true} src={BgImage} alt="background" className='hidden md:block absolute w-full h-full object-cover bg-right-bottom' />
+            <Image loading='eager' priority={true} src={BgMobile} alt="background" className='md:hidden absolute w-full h-full object-cover bg-center' />
+            <Image loading='eager' priority={true} src={CellImage} alt="cell" className='hidden md:block absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10' />
+            <Image loading='eager' priority={true} src={CellImageMobile} alt="cell" className='md:hidden absolute top-0 my-auto object-contain right-0 z-10' />
             <div className="bg-theme-red h-[50%] hidden md:flex p-20 clip-1">
                 <h1 className="text-[43px] text-center text-white uppercase leading-tight">
                     <span className='font-[500]'>Barrios</span> <span className='font-[900]'>seguros,</span><br />
@@ -40,9 +40,9 @@ export default function Header() {
             <div className="relative md:bg-black mt-auto h-[40%] md:h-[20%] flex items-center justify-center z-20 clip-2">
                 <div className="header-links flex flex-col md:flex-row items-center md:items-end gap-6 md:gap-12">
                     <Image src={Logo} alt="Logo" width={80} className='mr-5 hidden md:block' />
-                    <Link href="/#how-it-works" className="text-black md:text-white text-3xl md:text-xl mb-4">Producto</Link>
-                    <Link href="/#beneficios" className="text-black md:text-white text-3xl md:text-xl mb-4">Beneficios</Link>
-                    <Link href="/#contact" className="text-black md:text-white text-3xl md:text-xl mb-4">Cotizar</Link>
+                    <Link href="/#how-it-works" data-section="how-it-works" className="text-black md:text-white text-3xl md:text-xl mb-4">Producto</Link>
+                    <Link href="/#beneficios" data-section="beneficios" className="text-black md:text-white text-3xl md:text-xl mb-4">Beneficios</Link>
+                    <Link href="/#contact" data-section="contact" className="text-black md:text-white text-3xl md:text-xl mb-4">Cotizar</Link>
                 </div>
             </div>
         </header>
