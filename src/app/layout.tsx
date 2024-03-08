@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     url: "https://alertabarrio.com",
     description:
       "Todo en segundos: activar alarmas desde tu celular, y avisar a todos, a cualquier hora, desde cualquier lugar",
-    images: [
-      '/og-image.png',
-    ],
     locale: "es_ES",
     type: "website",
   },
