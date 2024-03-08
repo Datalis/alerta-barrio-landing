@@ -6,7 +6,7 @@ import Script from "next/script";
 export const runtime = "edge";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://alertabarrio.com'),
   title: "Alerta Barrio",
   description:
     "Todo en segundos: activar alarmas desde tu celular, y avisar a todos, a cualquier hora, desde cualquier lugar",
