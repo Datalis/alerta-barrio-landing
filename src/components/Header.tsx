@@ -27,10 +27,10 @@ export default function Header() {
 
     return (
         <header id="header" className="h-svh flex flex-col">
-            <Image loading='eager' priority={true} src={BgImage} alt="background" className='hidden md:block absolute w-full h-full object-cover bg-right-bottom' />
-            <Image loading='eager' priority={true} src={BgMobile} alt="background" className='md:hidden absolute w-full h-full object-cover bg-center' />
-            <Image loading='eager' priority={true} src={CellImage} alt="cell" className='hidden md:block absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10' />
-            <Image loading='eager' priority={true} src={CellImageMobile} alt="cell" className='md:hidden absolute top-0 my-auto object-contain right-0 z-10' />
+            <Image sizes='100vw' loading='eager' priority={true} src={BgImage} alt="background" className='hidden md:block absolute w-full h-full object-cover bg-right-bottom' />
+            <Image sizes='100vw' loading='eager' priority={true} src={BgMobile} alt="background" className='md:hidden absolute w-full h-full object-cover bg-center' />
+            <Image sizes='100vw' loading='eager' priority={true} src={CellImage} alt="cell" className='hidden md:block absolute bottom-[15%] h-[500px] object-contain right-0 w-[50%] z-10' />
+            <Image sizes='100vw' loading='eager' priority={true} src={CellImageMobile} alt="cell" className='md:hidden absolute top-0 my-auto object-contain right-0 z-10' />
             <div className="bg-theme-red h-[50%] hidden md:flex p-20 clip-1">
                 <h1 className="text-[43px] text-center text-white uppercase leading-tight">
                     <span className='font-[500]'>Barrios</span> <span className='font-[900]'>seguros,</span><br />
