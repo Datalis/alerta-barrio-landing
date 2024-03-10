@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import Footer from "@/components/Footer";
 import { codecPro } from "@/lib/fonts";
 import Script from "next/script";
+import { GoogleTagManager } from '@next/third-parties/google'
+
+import "./globals.css";
+
+
 export const runtime = "edge";
 
 export const metadata: Metadata = {
@@ -51,6 +55,7 @@ export default function RootLayout({
           async={true}
           defer={true}
         />
+        <GoogleTagManager gtmId="GTM-5JHJ44TB" />
       </body>
     </html>
   );
