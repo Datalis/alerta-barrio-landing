@@ -8,7 +8,7 @@ export default function BenefitsSection3() {
         <div className="py-14 flex flex-col z-10 relative">
             <div className="flex flex-col">
                 <div className="flex flex-col items-center md:items-start">
-                    <Image src={Step3Image} alt="step1" width={150} />
+                    <Image src={Step3Image} alt="step3" width={150} />
                     <p className="mt-10 font-light">
                         Cada comunidad puede disfrutar de una cobertura <br className="hidden md:inline" />
                         completa, con la posibilidad de incluir hasta <br className="hidden md:inline" />

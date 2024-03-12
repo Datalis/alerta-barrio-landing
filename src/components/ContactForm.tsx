@@ -115,7 +115,7 @@ export default function ContactForm() {
           </form>
           <Image
             src={FormImage}
-            alt=""
+            alt="form"
             width={400}
             className="h-36 object-contain md:h-full"
           ></Image>

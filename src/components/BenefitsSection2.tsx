@@ -9,7 +9,7 @@ export default function BenefitsSection2() {
     return (
         <div className="py-14 z-10 relative">
             <div className="flex justify-center md:justify-end">
-                <Image src={Step2Image} alt="step1" width={150} />
+                <Image src={Step2Image} alt="step2" width={150} />
             </div>
             <div className="flex md:flex-row flex-col items-center gap-20 mt-10">
                 <p className="inline font-light">Puedes activar las alarmas en
@@ -29,10 +29,10 @@ export default function BenefitsSection2() {
                     <Image src={PlayaImage} alt="playa" width={250} />
                 </div>
                 <div className="">
-                    <Image src={WifiLogo} alt="playa" />
+                    <Image src={WifiLogo} alt="wifi" />
                 </div>
                 <div className="justify-self-end self-end">
-                    <Image src={ViajeImage} alt="playa" width={250} />
+                    <Image src={ViajeImage} alt="travel" width={250} />
                 </div>
             </div>
         </div>
